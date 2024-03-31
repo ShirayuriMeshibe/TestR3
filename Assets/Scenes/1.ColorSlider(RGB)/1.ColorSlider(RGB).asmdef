@@ -1,0 +1,20 @@
+{
+    "name": "1.ColorSlider(RGB)",
+    "rootNamespace": "ShirayuriMeshibe",
+    "references": [
+        "UniTask",
+        "UniTask.Linq",
+        "UniTask.TextMeshPro",
+        "R3.Unity",
+        "Unity.TextMeshPro"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
