@@ -3,6 +3,7 @@
     "com.annulusgames.lit-motion": "https://github.com/AnnulusGames/LitMotion.git?path=src/LitMotion/Assets/LitMotion",
     "com.cysharp.r3": "1.1.11",
     "com.cysharp.unitask": "2.5.4",
+    "com.ls9512.utween": "1.1.4",
     "com.unity.feature.development": "1.0.1",
     "com.unity.textmeshpro": "3.0.8",
     "com.unity.timeline": "1.7.6",
@@ -56,6 +57,13 @@
       "url": "https://unitynuget-registry.azurewebsites.net",
       "scopes": [
         "org.nuget"
+      ]
+    },
+    {
+      "name": "UTween",
+      "url": "https://package.openupm.com",
+      "scopes": [
+        "com.ls9512.utween"
       ]
     }
   ]

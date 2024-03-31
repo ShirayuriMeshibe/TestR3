@@ -27,6 +27,13 @@
       "dependencies": {},
       "url": "https://package.openupm.com"
     },
+    "com.ls9512.utween": {
+      "version": "1.1.4",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://package.openupm.com"
+    },
     "com.unity.burst": {
       "version": "1.8.12",
       "depth": 1,
