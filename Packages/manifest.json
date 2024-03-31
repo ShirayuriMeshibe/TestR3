@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "com.annulusgames.lit-motion": "https://github.com/AnnulusGames/LitMotion.git?path=src/LitMotion/Assets/LitMotion",
+    "com.cysharp.r3": "1.1.11",
     "com.cysharp.unitask": "2.5.4",
     "com.unity.feature.development": "1.0.1",
     "com.unity.textmeshpro": "3.0.8",
@@ -47,7 +48,7 @@
       "name": "Cysharp",
       "url": "https://package.openupm.com",
       "scopes": [
-        "com.cysharp.unitask"
+        "com.cysharp"
       ]
     },
     {
