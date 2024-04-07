@@ -1,0 +1,23 @@
+{
+    "name": "5.Raycast",
+    "rootNamespace": "ShirayuriMeshibe",
+    "references": [
+        "UniTask",
+        "UniTask.Linq",
+        "UniTask.TextMeshPro",
+        "R3.Unity",
+        "Unity.TextMeshPro",
+        "LitMotion",
+        "LitMotion.Extensions",
+        "Aya.Tween"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
