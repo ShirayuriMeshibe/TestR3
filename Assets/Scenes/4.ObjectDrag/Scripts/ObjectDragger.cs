@@ -24,7 +24,7 @@ namespace ShirayuriMeshibe
                 {
                     lastMousePosition = Input.mousePosition;
                     rigidbody.isKinematic = false;
-                });
+                }).AddTo(this);
                 this.OnMouseDragAsObservable().Subscribe(_ =>
                 {
                     var delta = Input.mousePosition - lastMousePosition;
@@ -36,15 +36,15 @@ namespace ShirayuriMeshibe
                     position = position2;
                     //transform.position = position2;
                     lastMousePosition = Input.mousePosition;
-                });
+                }).AddTo(this);
                 this.OnMouseUpAsObservable().Subscribe(_ =>
                 {
                     rigidbody.isKinematic = true;
-                });
+                }).AddTo(this);
                 this.FixedUpdateAsObservable().Subscribe(_ =>
                 {
                     rigidbody.MovePosition(position);
-                });
+                }).AddTo(this);
             }
             else
                 Debug.LogError("Failed get Rigidbody component.");
