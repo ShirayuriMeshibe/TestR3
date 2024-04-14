@@ -17,15 +17,17 @@ namespace ShirayuriMeshibe
         {
             if (gameObject.TryGetComponent<Rigidbody>(out var rigidbody))
             {
+                var eventTrigger = gameObject.AddComponent<ObservableEventTrigger>();
+
                 var lastMousePosition = Vector3.zero;
                 var position = transform.position;
 
-                this.OnMouseDownAsObservable().Subscribe(_ =>
+                eventTrigger.OnPointerDownAsObservable().Subscribe(_ =>
                 {
                     lastMousePosition = Input.mousePosition;
                     rigidbody.isKinematic = false;
                 }).AddTo(this);
-                this.OnMouseDragAsObservable().Subscribe(_ =>
+                eventTrigger.OnDragAsObservable().Subscribe(_ =>
                 {
                     var delta = Input.mousePosition - lastMousePosition;
                     var z = delta.y * _dragSpeed;
@@ -37,7 +39,7 @@ namespace ShirayuriMeshibe
                     //transform.position = position2;
                     lastMousePosition = Input.mousePosition;
                 }).AddTo(this);
-                this.OnMouseUpAsObservable().Subscribe(_ =>
+                eventTrigger.OnPointerUpAsObservable().Subscribe(_ =>
                 {
                     rigidbody.isKinematic = true;
                 }).AddTo(this);
