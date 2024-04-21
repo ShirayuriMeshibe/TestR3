@@ -32,7 +32,7 @@ namespace ShirayuriMeshibe
                     var ray = camera.ScreenPointToRay(mousePosition);
                     if(Physics.Raycast(ray, out var raycastHit))
                     {
-                        Debug.Log($"Hit. {raycastHit.transform.name}");
+                        Debug.Log($"Hit. {raycastHit.transform.name} at {mousePosition}");
                     }
                     isMouseDown = false;
                 })
